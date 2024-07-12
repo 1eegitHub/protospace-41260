@@ -7,9 +7,6 @@ class CreatePrototypes < ActiveRecord::Migration[7.0]
       t.text :concept,      presence: true
       t.references :user,   presence: true
       t.timestamps
-
-      validates :image, presence: true
-    
       
     end
   end
