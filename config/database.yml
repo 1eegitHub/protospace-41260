@@ -21,4 +21,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+  url: postgresql://protospace_41261_user:xxqJIvAZFZRVTXhBxYSKNH3LxpV3JWkD@dpg-cq88ecaj1k6c73cg6ahg-a.oregon-postgres.render.com/protospace_41261
