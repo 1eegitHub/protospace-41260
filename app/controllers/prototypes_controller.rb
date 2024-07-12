@@ -18,14 +18,15 @@ class PrototypesController < ApplicationController
     @comments = @prototype.comments.includes(:user)
     @prototype = Prototype.find(params[:id])
     @comments = @prototype.comments
+    @user = @prototype.user
   end
 
   def create
-  
     @prototype = Prototype.new(prototype_params)
+    @user = User.find(params[:user_id])
 
     if @prototype.save
-      redirect_to root_path(@prototype)
+      redirect_to user_prototype_path(@user, @prototype)
     else
       render :new, status: :unprocessable_entity
     end
@@ -57,7 +58,6 @@ class PrototypesController < ApplicationController
   end
   
   def set_prototype
-    binding.pry
     @prototype = Prototype.find(params[:id])
   end
 
