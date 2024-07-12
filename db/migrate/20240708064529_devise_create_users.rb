@@ -39,9 +39,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
 
       t.timestamps null: false
 
-      has_many :prototypes
-      has_many :comments
-
     end
 
     add_index :users, :email,                unique: true

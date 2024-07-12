@@ -9,9 +9,7 @@ class CreatePrototypes < ActiveRecord::Migration[7.0]
       t.timestamps
 
       validates :image, presence: true
-      
-      belongs_to :user
-      has_many :comments, dependent: :destroy
+    
       
     end
   end
