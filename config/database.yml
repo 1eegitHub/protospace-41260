@@ -21,4 +21,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  url: postgresql://protospace_41261_user:xxqJIvAZFZRVTXhBxYSKNH3LxpV3JWkD@dpg-cq88ecaj1k6c73cg6ahg-a.oregon-postgres.render.com/protospace_41261
+  url: postgresql://protospace_41260_user:1uXYj9B89ktyAWvStEccCgH1UNaLwQxY@dpg-cq8cr7ij1k6c73ci4btg-a/protospace_41260
