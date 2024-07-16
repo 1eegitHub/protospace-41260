@@ -26,7 +26,7 @@ class PrototypesController < ApplicationController
     @user = User.find(params[:user_id])
 
     if @prototype.save
-      redirect_to user_prototype_path(@user, @prototype)
+      redirect_to root_path(@user, @prototype)
     else
       render :new, status: :unprocessable_entity
     end
